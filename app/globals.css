@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  .bg-dark{
+    @apply bg-[#121212];
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+.menu-enter {
+  animation: slideIn 0.3s ease-out;
+}
+
+.menu-exit {
+  animation: slideOut 0.3s ease-in;
+}
+/* Menghilangkan scrollbar secara umum */
+.hide-scrollbar {
+  overflow: -moz-scrollbars-none; /* Untuk Firefox */
+  -ms-overflow-style: none; /* Untuk Internet Explorer dan Edge */
+  scrollbar-width: none; /* Untuk browser berbasis Gecko */
+}
+
+/* Menghilangkan scrollbar pada Webkit (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tambahkan padding horizontal jika perlu untuk konten yang tidak terpotong */
+.scroll-container {
+  padding: 0 16px; /* Adjust padding to your needs */
+  display: flex;
+  overflow-x: auto; /* Menjaga scroll horizontal */
+  scroll-behavior: smooth; /* Menambahkan scroll yang halus */
+}
