@@ -27,13 +27,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
-      addUtilities(
-        {
-          '.scroll-smooth': {
-            scrollBehavior: 'smooth',
-          },
-        },
+    function ({ }) {
         ['responsive']
       );
     },
