@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  .bg-dark{
-    @apply bg-[#121212];
-  }
-}
-html{
+html {
   scroll-behavior: smooth;
 }
+
 .menu-enter {
   animation: slideIn 0.3s ease-out;
 }
@@ -17,6 +13,7 @@ html{
 .menu-exit {
   animation: slideOut 0.3s ease-in;
 }
+
 /* Menghilangkan scrollbar secara umum */
 .hide-scrollbar {
   overflow: -moz-scrollbars-none; /* Untuk Firefox */
@@ -31,7 +28,7 @@ html{
 
 /* Tambahkan padding horizontal jika perlu untuk konten yang tidak terpotong */
 .scroll-container {
-  padding: 0 16px; /* Adjust padding to your needs */
+  padding: 0 16px; /* Sesuaikan padding sesuai kebutuhan */
   display: flex;
   overflow-x: auto; /* Menjaga scroll horizontal */
   scroll-behavior: smooth; /* Menambahkan scroll yang halus */
