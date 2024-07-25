@@ -26,15 +26,8 @@ const config: Config = {
       },
     },
   },
-<<<<<<< HEAD
+
   plugins: [],
-=======
-  plugins: [
-    function ({ }) {
-        ['responsive']
-      );
-    },
-  ],
->>>>>>> 78946e53bd7606f36ba1b49570ea7fb580078acd
+
 };
 export default config;
